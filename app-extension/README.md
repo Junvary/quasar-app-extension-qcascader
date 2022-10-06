@@ -1,6 +1,6 @@
 # Quasar App Extension qcascader
 
-> qcascader allows you to display data statistically.
+> QCascader can be used to display and select tree structured data.
 
 [![npm](https://img.shields.io/npm/v/quasar-app-extension-qcascader.svg?label=quasar-app-extension-qcascader)](https://www.npmjs.com/package/quasar-app-extension-qcascader)
 [![npm](https://img.shields.io/npm/dt/quasar-app-extension-qcascader.svg)](https://www.npmjs.com/package/quasar-app-extension-qcascader)
