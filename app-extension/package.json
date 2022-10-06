@@ -1,0 +1,30 @@
+{
+    "name": "quasar-app-extension-qcascader",
+    "version": "0.0.1",
+    "description": "QCascader",
+    "author": "junvary <junvary@foxmail.com>",
+    "license": "MIT",
+    "main": "src/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Junvary/quasar-app-extension-qcascader.git"
+    },
+    "bugs": "https://github.com/Junvary/quasar-app-extension-qcascader/issues",
+    "homepage": "https://github.com/Junvary/quasar-app-extension-qcascader",
+    "keywords": [
+        "quasar",
+        "quasarframework",
+        "app",
+        "app extension",
+        "extension",
+        "cascader"
+    ],
+    "dependencies": {
+        "quasar-ui-qcascader": "latest"
+    },
+    "engines": {
+        "node": ">= 8.9.0",
+        "npm": ">= 5.6.0",
+        "yarn": ">= 1.6.0"
+    }
+}
