@@ -19,6 +19,9 @@ Quasar CLI will retrieve it from NPM and install the extension.
 quasar ext remove qcascader
 ```
 # Example
+```Vue
+<QCascader :options="options" />
+```
 ![cascader.jpg](https://s2.loli.net/2022/10/07/YQJ1KVwTlp5ZB6z.png)
 ```json
 const options = [
