@@ -1,7 +1,13 @@
 <template>
-    <q-select :dense="dense" v-model="model" :options="[{}]" :label="label" clearable style="width: 50%;">
+    <q-select :dense="dense" v-model="model" :options="[{}]" :label="label" clearable style="width: 50%;" multiple>
+        <template v-slot:selected>
+            <span v-if="model" v-for="item in model">
+                {{ item.label }}&nbsp;/&nbsp;
+            </span>
+            <template v-else />
+        </template>
         <template v-slot:option="scope">
-            <CascaderItem :dense="dense" :options="options" @handleSelect="handleSelect" />
+            <CascaderItem :dense="dense" :options="options" @handleSelect="handleSelect" :model="model" />
         </template>
     </q-select>
 </template>
@@ -34,12 +40,18 @@ export default defineComponent({
     },
     setup() {
         return {
-            model: ref(null)
+            model: ref(null),
+            selected: ref([])
         }
     },
     methods: {
-        handleSelect(item) {
-            this.model = item.value
+        handleSelect(item, deep) {
+            if (deep === 0) {
+                this.selected = [item]
+            } else {
+                this.selected[deep] = item
+            }
+            this.model = this.selected
         }
     }
 })
