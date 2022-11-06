@@ -1,13 +1,14 @@
 <template>
-    <q-select :dense="dense" v-model="model" :options="[{}]" :label="label" clearable style="width: 50%;" multiple>
+    <q-select :dense="dense" v-model="modelLabel" :options="[{}]" :label="label" style="width: 50%;" clearable multiple
+        @clear="handleClear">
         <template v-slot:selected>
-            <span v-if="model" v-for="item in model">
+            <span v-if="modelLabel" v-for="item in modelLabel">
                 {{ item.label }}&nbsp;/&nbsp;
             </span>
             <template v-else />
         </template>
         <template v-slot:option="scope">
-            <CascaderItem :dense="dense" :options="options" @handleSelect="handleSelect" :model="model" />
+            <CascaderItem :dense="dense" :options="options" @handleSelect="handleSelect" :modelLabel="modelLabel" />
         </template>
     </q-select>
 </template>
@@ -22,6 +23,11 @@ export default defineComponent({
         CascaderItem
     },
     props: {
+        modelValue: {
+            type: Array,
+            required: false,
+            default: () => []
+        },
         options: {
             type: Array,
             required: false,
@@ -38,21 +44,48 @@ export default defineComponent({
             default: ""
         }
     },
-    setup() {
+    setup(props, context) {
+        const modelLabel = ref([])
+        const selected = ref([])
+        const handleSelect = (item, deep) => {
+            if (deep === 0) {
+                selected.value = [item]
+            } else {
+                selected.value[deep] = item
+            }
+            modelLabel.value = selected.value
+            const valueList = []
+            modelLabel.value.forEach(item => {
+                valueList.push(item.value)
+            })
+            context.emit('update:modelValue', valueList)
+        }
+        const handleClear = (value) => {
+            context.emit('update:modelValue', [])
+        }
+        const setModelLabel = (options, v) => {
+            const getItem = options.filter(item => item.value === v)[0]
+            modelLabel.value.push(getItem)
+            return getItem.children || null
+        }
+        if (props.modelValue.length) {
+            let children = []
+            props.modelValue.forEach((v, i) => {
+                if (i === 0) {
+                    children = setModelLabel(props.options, v)
+                } else {
+                    if (children) {
+                        children = setModelLabel(children, v)
+                    }
+                }
+            })
+        }
+
         return {
-            model: ref(null),
-            selected: ref([])
+            modelLabel,
+            handleSelect,
+            handleClear,
         }
     },
-    methods: {
-        handleSelect(item, deep) {
-            if (deep === 0) {
-                this.selected = [item]
-            } else {
-                this.selected[deep] = item
-            }
-            this.model = this.selected
-        }
-    }
 })
 </script>

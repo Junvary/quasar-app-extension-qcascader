@@ -1,10 +1,14 @@
 <template>
     <q-page padding>
-        <QCascader :options="options" />
+        Model: {{ model }}
+        <QCascader :options="options" v-model="model" />
     </q-page>
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+const model = ref(["zhinan", "shejiyuanze", "yizhi"])
 const options = [
     {
         value: 'zhinan',
