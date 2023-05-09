@@ -1,4 +1,4 @@
-import QCascader from './components/QCascader'
+import QCascader from './components/QCascader.vue'
 
 import pkg from '../package.json'
 const { version } = pkg

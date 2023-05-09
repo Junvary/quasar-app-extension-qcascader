@@ -15,7 +15,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
-import CascaderItem from './CascaderItem'
+import CascaderItem from './CascaderItem.vue'
 
 export default defineComponent({
     name: "QCascader",
