@@ -1,6 +1,6 @@
 {
   "name": "@junvary/quasar-app-extension-qcascader",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "QCascader",
   "author": "junvary <junvary@foxmail.com>",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "cascader"
   ],
   "dependencies": {
-    "quasar-ui-qcascader": "latest"
+    "@junvary/quasar-ui-qcascader": "latest"
   },
   "engines": {
     "node": ">= 8.9.0",
