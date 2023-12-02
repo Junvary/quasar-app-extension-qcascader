@@ -1,6 +1,6 @@
 {
-    "name": "quasar-ui-qcascader",
-    "version": "0.0.5",
+    "name": "@junvary/quasar-ui-qcascader",
+    "version": "0.0.6",
     "author": "junvary <junvary@foxmail.com>",
     "description": "QCascader",
     "license": "MIT",

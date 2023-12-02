@@ -1,6 +1,6 @@
 {
-    "name": "quasar-app-extension-qcascader",
-    "version": "0.0.5",
+    "name": "@junvary/quasar-app-extension-qcascader",
+    "version": "0.0.6",
     "description": "QCascader",
     "author": "junvary <junvary@foxmail.com>",
     "license": "MIT",

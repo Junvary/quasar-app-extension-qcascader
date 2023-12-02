@@ -1,7 +1,10 @@
 <template>
     <q-page padding>
-        Model: {{ model }}
-        <QCascader :options="options" v-model="model" />
+        <q-card style="padding: 20px; width: 50%;">
+            Model: {{ model }}
+            <QCascader :options="options" v-model="model" />
+        </q-card>
+
     </q-page>
 </template>
 
@@ -20,7 +23,8 @@ const options = [
                 children: [
                     {
                         value: 'yizhi',
-                        label: '一致'
+                        label: '一致',
+                        optionDisable: true,
                     },
                     {
                         value: 'fankui',

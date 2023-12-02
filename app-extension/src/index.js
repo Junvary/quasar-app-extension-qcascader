@@ -8,11 +8,10 @@
 
 function extendConf(conf, api) {
   // register our boot file
-  conf.boot.push('~quasar-app-extension-qcascader/src/boot/register.js')
-
+  conf.boot.push('~@junvary/quasar-app-extension-qcascader/src/boot/register.js')
   if (api.hasVite !== true) {
     // make sure app extension files & ui package gets transpiled
-    conf.build.transpileDependencies.push(/quasar-app-extension-qstatistic[\\/]src/)
+    conf.build.transpileDependencies.push(/@junvary[\\/]quasar-app-extension-qcascader[\\/]src/)
   }
 }
 

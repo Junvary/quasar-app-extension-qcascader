@@ -1,11 +1,11 @@
 # Quasar App Extension qcascader
 > QCascader can be used to display and select tree structured data.
 
-[![npm](https://img.shields.io/npm/v/quasar-app-extension-qcascader.svg?label=quasar-app-extension-qcascader)](https://www.npmjs.com/package/quasar-app-extension-qcascader)
-[![npm](https://img.shields.io/npm/dt/quasar-app-extension-qcascader.svg)](https://www.npmjs.com/package/quasar-app-extension-qcascader)
+[![npm](https://img.shields.io/npm/v/@junvary/quasar-app-extension-qcascader.svg?label=@junvary/quasar-app-extension-qcascader)](https://www.npmjs.com/package/@junvary/quasar-app-extension-qcascader)
+[![npm](https://img.shields.io/npm/dt/@junvary/quasar-app-extension-qcascader.svg)](https://www.npmjs.com/package/@junvary/quasar-app-extension-qcascader)
 
-[![npm](https://img.shields.io/npm/v/quasar-ui-qcascader.svg?label=quasar-ui-qcascader)](https://www.npmjs.com/package/quasar-ui-qcascader)
-[![npm](https://img.shields.io/npm/dt/quasar-ui-qcascader.svg)](https://www.npmjs.com/package/quasar-ui-qcascader)
+[![npm](https://img.shields.io/npm/v/@junvary/quasar-ui-qcascader.svg?label=@junvary/quasar-ui-qcascader)](https://www.npmjs.com/package/@junvary/quasar-ui-qcascader)
+[![npm](https://img.shields.io/npm/dt/@junvary/quasar-ui-qcascader.svg)](https://www.npmjs.com/package/@junvary/quasar-ui-qcascader)
 
 Compatible with Quasar UI v2 and Vue 3.
 
@@ -16,13 +16,13 @@ Compatible with Quasar UI v2 and Vue 3.
 
 # Install
 ```bash
-quasar ext add qcascader
+quasar ext add @junvary/qcascader
 ```
 Quasar CLI will retrieve it from NPM and install the extension.
 
 # Uninstall
 ```bash
-quasar ext remove qcascader
+quasar ext remove @junvary/qcascader
 ```
 # Example
 ```Vue

@@ -1,10 +1,10 @@
 # Component QCascader
 
-[![npm](https://img.shields.io/npm/v/quasar-app-extension-qcascader.svg?label=quasar-app-extension-qcascader)](https://www.npmjs.com/package/quasar-app-extension-qcascader)
-[![npm](https://img.shields.io/npm/dt/quasar-app-extension-qcascader.svg)](https://www.npmjs.com/package/quasar-app-extension-qcascader)
+[![npm](https://img.shields.io/npm/v/@junvary/quasar-app-extension-qcascader.svg?label=@junvary/quasar-app-extension-qcascader)](https://www.npmjs.com/package/@junvary/quasar-app-extension-qcascader)
+[![npm](https://img.shields.io/npm/dt/@junvary/quasar-app-extension-qcascader.svg)](https://www.npmjs.com/package/@junvary/quasar-app-extension-qcascader)
 
-[![npm](https://img.shields.io/npm/v/quasar-ui-qcascader.svg?label=quasar-ui-qcascader)](https://www.npmjs.com/package/quasar-ui-qcascader)
-[![npm](https://img.shields.io/npm/dt/quasar-ui-qcascader.svg)](https://www.npmjs.com/package/quasar-ui-qcascader)
+[![npm](https://img.shields.io/npm/v/@junvary/quasar-ui-qcascader.svg?label=@junvary/quasar-ui-qcascader)](https://www.npmjs.com/package/@junvary/quasar-ui-qcascader)
+[![npm](https://img.shields.io/npm/dt/@junvary/quasar-ui-qcascader.svg)](https://www.npmjs.com/package/@junvary/quasar-ui-qcascader)
 
 **Compatible with Quasar UI v2 and Vue 3**.
 
@@ -19,7 +19,7 @@
 
 ## Quasar CLI project
 
-Install the [App Extension](https://www.npmjs.com/package/quasar-app-extension-qcascader).
+Install the [App Extension](https://www.npmjs.com/package/@junvary/quasar-app-extension-qcascader).
 
 **OR**:
 
@@ -28,8 +28,8 @@ Create and register a boot file:
 
 ```js
 import Vue from 'vue'
-import Plugin from 'quasar-ui-qcascader'
-import 'quasar-ui-qcascader/dist/index.css'
+import Plugin from '@junvary/quasar-ui-qcascader'
+import '@junvary/quasar-ui-qcascader/dist/index.css'
 
 Vue.use(Plugin)
 ```
@@ -37,10 +37,10 @@ Vue.use(Plugin)
 **OR**:
 
 ```html
-<style src="quasar-ui-qcascader/dist/index.css"></style>
+<style src="@junvary/quasar-ui-qcascader/dist/index.css"></style>
 
 <script>
-import { Component as QCascader } from 'quasar-ui-qcascader'
+import { Component as QCascader } from '@junvary/quasar-ui-qcascader'
 
 export default {
   
@@ -57,8 +57,8 @@ export default {
 
 ```js
 import Vue from 'vue'
-import Plugin from 'quasar-ui-qcascader'
-import 'quasar-ui-qcascader/dist/index.css'
+import Plugin from '@junvary/quasar-ui-qcascader'
+import '@junvary/quasar-ui-qcascader/dist/index.css'
 
 Vue.use(Plugin)
 ```
@@ -66,10 +66,10 @@ Vue.use(Plugin)
 **OR**:
 
 ```html
-<style src="quasar-ui-qcascader/dist/index.css"></style>
+<style src="@junvary/quasar-ui-qcascader/dist/index.css"></style>
 
 <script>
-import { Component as QCascader } from 'quasar-ui-qcascader'
+import { Component as QCascader } from '@junvary/quasar-ui-qcascader'
 
 export default {
   
@@ -91,16 +91,16 @@ Add the following tag(s) after the Quasar ones:
 ```html
 <head>
   <!-- AFTER the Quasar stylesheet tags: -->
-  <link href="https://cdn.jsdelivr.net/npm/quasar-ui-qcascader/dist/index.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/@junvary/quasar-ui-qcascader/dist/index.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <!-- at end of body, AFTER Quasar script(s): -->
-  <script src="https://cdn.jsdelivr.net/npm/quasar-ui-qcascader/dist/index.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@junvary/quasar-ui-qcascader/dist/index.umd.min.js"></script>
 </body>
 ```
 If you need the RTL variant of the CSS, then go for the following (instead of the above stylesheet link):
 ```html
-<link href="https://cdn.jsdelivr.net/npm/quasar-ui-qcascader/dist/index.rtl.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/@junvary/quasar-ui-qcascader/dist/index.rtl.min.css" rel="stylesheet" type="text/css">
 ```
 
 # Setup

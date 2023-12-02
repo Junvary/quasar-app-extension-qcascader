@@ -1,6 +1,5 @@
 <template>
-    <q-select :dense="dense" v-model="modelLabel" :options="[{}]" :label="label" style="width: 50%;" clearable multiple
-        @clear="handleClear">
+    <q-select :dense="dense" v-model="modelLabel" :options="[{}]" :label="label" @clear="handleClear">
         <template v-slot:selected>
             <span v-if="modelLabel" v-for="item in modelLabel">
                 {{ item.label }}&nbsp;/&nbsp;
@@ -42,7 +41,7 @@ export default defineComponent({
             type: String,
             required: false,
             default: ""
-        }
+        },
     },
     setup(props, context) {
         const modelLabel = ref([])
